@@ -8,8 +8,7 @@ import requests
 # LOAD DATA
 # --------------------------
 
-movies = pd.read_csv("movies.csv")
-
+movies = pickle.load(open("movies.pkl", "rb"))
 similarity = pickle.load(open("similarity.pkl", "rb"))
 movies_list = movies['title'].values
 
