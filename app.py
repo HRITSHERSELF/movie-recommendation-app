@@ -9,7 +9,6 @@ import requests
 # --------------------------
 
 movies = pickle.load(open("movies.pkl", "rb"))
-similarity = pickle.load(open("similarity.pkl", "rb"))
 movies_list = movies['title'].values
 
 # --------------------------
@@ -28,6 +27,7 @@ def fetch_poster(movie_id):
 # --------------------------
 # RECOMMENDATION FUNCTION
 # --------------------------
+
 
 
 
